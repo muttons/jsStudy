@@ -46,7 +46,14 @@ html, body {
   }
 
 
-
+  .add-button {
+    position: absolute;
+    top: 55px;
+    left: 1px;
+  }
+.button {
+  display: true;
+}
 .col-xs-6 {
   padding-left: 10px;
   
