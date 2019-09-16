@@ -1,0 +1,263 @@
+
+a:href {
+  text-align: center;
+  color: black;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+  .jumbotron {
+    background-color: purple;
+    color:#ffffff;
+    padding: 70px 10px;
+  }
+
+  .bg-grey {
+    background-color: #292929;
+  }
+
+  .container-fluid {
+    padding: 60px 50px;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+
+html, body {
+  height: 100%;
+}
+
+.fill-height {
+    min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+}
+  .logo {
+    font-size: 200px;
+    color: purple;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0; 
+    }
+  }
+
+
+
+.col-xs-6 {
+  padding-left: 10px;
+  
+}
+    .btn-block {
+    margin-top: 25px;
+  }
+
+  .btn-primary {
+    background-color: #e8e8e8;
+    padding-top: 10px;
+    border: 2px;
+    color:#292929;
+    border-style: solid;
+
+
+  }
+
+
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #292929;
+    border-color: #e8e8e8;
+
+  }
+
+ .btn-primary:active:focus {
+    background-color: #292929;
+    box-shadow: 1px 1px;
+
+  }
+
+ .btn-secondary {
+    background-color: #292929;
+    border:none;
+    color: #e8e8e8;
+    font-size: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    float: left;
+  }
+
+ .btn-secondary:hover, .btn-secondary:focus {
+    background-color: #e8e8e8;
+    border:none;
+  }
+
+ .btn-secondary:active:focus {
+    background-color: #e8e8e8;
+    box-shadow: 1px 1px;
+  }
+
+ .btn-tertiary {
+    background-color: #292929;
+    padding: 5px;
+    border:none;
+    color:#e8e8e8;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+ .btn-tertiary:hover, .btn-tertiary:focus {
+    background-color: #e8e8e8;
+    border:none;
+  }
+
+ .btn-tertiary:active:focus {
+    background-color: #e8e8e8;
+    box-shadow: 1px 1px;
+  }
+
+   .btn-quad {
+    background-color: #e8e8e8;
+    border:none;
+    color: #292929;
+    font-size: 33px;
+    padding-top: 0px;
+  }
+
+ .btn-quad:hover, .btn-quad:focus {
+    background-color: #292929;
+    border:none;
+  }
+
+ .btn-quad:active:focus {
+    background-color: #292929;
+    box-shadow: 1px 1px;
+  }
+
+ .logo-small {
+  font-size: 50px;
+}
+
+ .home-button {
+ padding-bottom: 9px;
+ padding-top: 6px;
+  font-size: 30px;
+}
+
+
+
+.row {
+  padding: 0px;
+
+}
+
+.navbar-header {
+  float: none;
+  color: #e8e8e8;
+  background-color: #f6b220;
+  border-bottom-style: solid;
+  border-color: #292929;
+
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #292929;
+  background-color: #292929;
+
+}
+.navbar-inverse .navbar-brand {
+  color: #292929;
+}
+.navbar-toggle {
+  display: block;
+  border-color: #292929;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+  border-color: #292929;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+  border-color: #292929;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #e8e8e8;
+}
+.with-margin {
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.with-margin-buttons {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  line-height: 50px; /* Vertically center the text there */
+  background-color: #f6b220;
+  padding-top: 7px;
+  border-top-style: solid;
+  border-color: #292929;
+  
+}
+
+.panel-default {
+  color: #292929;
+}
+
+.panel-default > .panel-heading {
+    color: #292929;
+    background-color: #e8e8e8;
+    padding-right: 0px;
+}
+
+.panel-heading {
+
+background: #292929;
+
+}
+
+.collapse {
+
+  border-top-right-radius: 30px;
+  color: #292929;
+}
+
+.list-group-item {
+
+ color: #fff;
+  background-color: #292929;
+}
+
+ a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: #fff;
+      background-color: transparent;
+ }
+
+a[href^=tel] {
+  color: #fff;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+

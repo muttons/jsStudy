@@ -1,0 +1,15 @@
+{
+  "short_name": "Thrive",
+  "name": "Thrive Upstate",
+  "icons": [
+    {
+      "src": "app-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#292929",
+  "display": "standalone",
+  "theme_color": "#292929"
+}

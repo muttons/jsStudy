@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thrive Upstate</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- START MY CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+ <!-- END MY CSS -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="manifest" href="manifest.json">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="150x150" href="apple-touch-icon.png">
+</head>
+<!-- Initialize Bootstrap functionality -->
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+function goBack() {
+  window.history.back();
+}
+
+</script>
+
+
+<!--  START STYLE SECTION FOR CSS -->
+<style>/* reset */
+
+
+fieldset {
+    background-color: #292929;
+    border-radius: 0px;
+}
+#fs-frm input,
+#fs-frm select,
+#fs-frm button,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label {
+  font-family: inherit;
+  font-size: 100%;
+  color: #292929;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+}
+#fs-frm label,
+#fs-frm legend {
+  font-size: 10pt;
+  margin-bottom: .5em;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  color: #e8e8e8;
+}
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1em;
+ 
+  margin-bottom: 30px;
+
+}
+
+#fs-frm button {
+
+  
+  padding: .75em 1em;
+  margin-bottom: 1.5em;
+    background-color: #292929;
+    border: 2px;
+    color:#292929;
+    border-style: solid;
+
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+  
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm button,
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+   padding: .75em 1em;
+  margin-bottom: 1.5em;
+    background-color: #e8e8e8;
+    border: 2px;
+    color:#292929;
+    border-style: solid;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+ 
+}
+
+#fs-frm button:focus,
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm button,
+#fs-frm select {
+  text-transform: none;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+
+.extra-padding {
+
+    background-color: #292929;
+}
+
+
+</style>
+<!--  END STYLE SECTION FOR CSS -->
+
+
+
+
+
+<body>
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">THRIVE UPSTATE</a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="company-directory.html">Company Directory</a></li>
+      <li><a href="company-policies.html">Company Policy</a></li>
+      <li><a href="location-directory.html">Location Directory</a></li>
+      <li><a href="helpdesk-request.html">Helpdesk Request</a></li>
+      <li><a href="maintenence-request.html">Maintenence Request</a></li>
+      <li><a href="thrive-arrive.html">Thrive Arrive</a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+<div class="extra-padding">
+ <br><br><br>
+
+</div>
+<form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/jonathan.osterud@thriveupstate.org" method="post">
+
+
+    
+  <fieldset id="fs-frm-inputs">
+<div class="col-xs-10">
+
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+
+
+
+
+
+
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="firstname.lastname@thriveupstate.org" required="">
+
+
+
+     <label for="telephone">Telephone Number</label>
+    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555"requited="">
+
+
+
+
+    <label for="street-address">Location</label>
+    <input type="text" name="street" id="street-address" placeholder="Address" required="">
+
+    <label for="message">Detailed Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Please describe your issue in as much detail as possible." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+  
+
+  <input type="submit" value="Create Ticket">
+
+
+</div>
+  </fieldset>
+</form>
+
+<div class="extra-padding">
+  <br><br><br><br><br><br><br><br>
+</div>
+
+
+
+
+
+<footer class="footer">
+  <div class="container text-center">
+  
+    <div class="col-xs-2">
+        <button class="btn btn-secondary btn-sm" onclick="goBack()"><span class="glyphicon glyphicon-chevron-left home-button"></span></button>
+        
+    </div>
+    <div class="col-xs-1">
+    </div>
+      <div class="col-xs-6">
+        <a href="index.html" class="btn btn-tertiary btn-sm">
+              <div class="glyphicon glyphicon-home home-button"></div>
+          </a> 
+        </div>
+      <div class="col-xs-1">
+    </div>
+    <div class="col-xs-2">
+    </div>
+        
+    </div>    
+  </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

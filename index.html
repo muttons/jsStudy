@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thrive Upstate</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- START MY CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+ <!-- END MY CSS -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="index.js" defer></script>
+   <link rel="manifest" href="manifest.json">
+   <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+   <link rel="apple-touch-icon" sizes="150x150" href="icon/apple-touch-icon.png">
+<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+
+</head>
+<!-- Initialize Bootstrap functionality -->
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+function goBack() {
+  window.history.back();
+}
+
+
+</script>
+<button class="add-button">Add to home screen</button>
+
+
+<!--  START STYLE SECTION FOR CSS -->
+
+
+
+
+<!--  END STYLE SECTION FOR CSS -->
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">THRIVE UPSTATE</a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="company-directory.html">Company Directory</a></li>
+      <li><a href="company-policies.html">Company Policy</a></li>
+      <li><a href="location-directory.html">Location Directory</a></li>
+      <li><a href="helpdesk-request.html">Helpdesk Request</a></li>
+      <li><a href="maintenence-request.html">Maintenence Request</a></li>
+      <li><a href="thrive-arrive.html">Thrive Arrive</a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+
+<body>
+	
+
+    <button class="add-button">Add to home screen</button>
+
+<div class="container-fluid text-center bg-grey fill-height">
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="company-directory.html" class="btn btn-block btn-primary btn-lg">
+       <span class="glyphicon glyphicon-folder-open logo-small"></span>
+        <h4>Company Directory</h4>
+      </a>
+    </div>
+    
+    <div class="col-sm-6">
+      <a href="company-policies.html" class="btn  btn-block btn-primary btn-lg">
+        <span class="glyphicon glyphicon-book logo-small"></span>
+        <h4>Company Policies</h4>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="location-directory.html" class="btn btn-block btn-primary btn-lg">
+        <span class="glyphicon glyphicon-map-marker logo-small"></span>
+        <h4>Location Directory</h4>
+      </a> 
+    </div>
+
+    <div class="col-sm-6">
+      <a href="helpdesk-request.html" class="btn btn-block btn-primary btn-lg">
+        <span class="glyphicon glyphicon-hdd logo-small"></span>
+        <h4>Helpdesk Request</h4>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="maintenence-request.html" class="btn btn-block btn-primary btn-lg">
+        <span class="glyphicon glyphicon-wrench logo-small"></span>
+        <h4>Maintenence Request</h4>
+      </a>
+
+    </div>
+
+    <div class="col-sm-6">
+      <a href="thrive-arrive.html" class="btn btn-block btn-primary btn-lg">
+      <span class="glyphicon glyphicon-road logo-small"></span>
+      <h4>Thrive Arrive</h4>
+      </a>
+     </div>
+   </div>
+  </div>
+</div>
+
+<footer class="footer">
+	<div class="container text-center">
+	
+		<div class="col-xs-2">
+				<button class="btn btn-secondary btn-sm" onclick="goBack()"><span class="glyphicon glyphicon-chevron-left home-button"></span></button>
+				
+		</div>
+		<div class="col-xs-1">
+ 		</div>
+ 			<div class="col-xs-6">
+				<a href="index.html" class="btn btn-tertiary btn-sm">
+      				<div class="glyphicon glyphicon-home home-button"></div>
+     			</a> 
+     		</div>
+     	<div class="col-xs-1">
+ 		</div>
+ 		<div class="col-xs-2">
+ 		</div>
+				
+		</div>		
+ 	</div>
+ 	</div>
+
+</footer>
+
+
+</body>
+</html>
