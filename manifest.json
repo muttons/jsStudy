@@ -3,17 +3,17 @@
   "name": "Thrive Upstate",
   "icons": [
     {
-      "src": "/images/app-logo-512.png",
+      "src": "/test/images/app-logo-512.png",
       "type": "image/png",
       "sizes": "512x512"
     } , 
     {
-      "src": "/images/app-logo-192.png",
+      "src": "/test/images/app-logo-192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "/test/index.html",
   "background_color": "#292929",
   "display": "standalone",
   "theme_color": "#292929"
