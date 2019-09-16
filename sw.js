@@ -11,8 +11,8 @@ self.addEventListener('install', function(e) {
        '/test/company-directory-it.html',
        '/test/information-technology.html',
        '/test/helpdesk-request.html',
-       '/test/images/app-logo-512.png',
-       '/test/images/app-logo-192.png'
+       '/test/images/logo-512.png',
+       '/test/images/logo-192.png'
      ]);
    })
  );
