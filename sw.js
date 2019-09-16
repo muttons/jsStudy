@@ -3,15 +3,16 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       'index.html',
-       'index.js',
-       'style.css',
-       'company-directory.html',
-       'company-directory-it.html',
-       'information-technology.html',
-       'helpdesk-request.html',
-       '/images/app-logo-512.png',
-       '/images/app-logo-192.png'
+       '/test/',
+       '/test/index.html',
+       '/test/index.js',
+       '/test/style.css',
+       '/test/company-directory.html',
+       '/test/company-directory-it.html',
+       '/test/information-technology.html',
+       '/test/helpdesk-request.html',
+       '/test/images/app-logo-512.png',
+       '/test/images/app-logo-192.png'
      ]);
    })
  );
