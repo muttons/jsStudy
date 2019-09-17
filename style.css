@@ -46,11 +46,8 @@ html, body {
   }
 
 
-  .add-button {
-    position: absolute;
-    top: 55px;
-    left: 1px;
-  }
+
+
 .button {
   display: true;
 }
@@ -127,11 +124,13 @@ html, body {
   }
 
    .btn-quad {
-    background-color: #e8e8e8;
+    background-color: #f6b220;
     border:none;
     color: #292929;
-    font-size: 33px;
+    font-size: 28px;
     padding-top: 0px;
+    border-radius: 5px;
+
   }
 
  .btn-quad:hover, .btn-quad:focus {
@@ -140,7 +139,7 @@ html, body {
   }
 
  .btn-quad:active:focus {
-    background-color: #292929;
+    background-color: #f6b220;
     box-shadow: 1px 1px;
   }
 
