@@ -41,7 +41,6 @@ a:hover {
 
 html, body {
   height: 100%;
-  padding-top: 15px;
   
 }
 
@@ -125,7 +124,7 @@ html, body {
     background-color: #121212;
     padding: 5px;
     border:none;
-    color:#e8e8e8;
+    color: #e8e8e8;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -179,44 +178,48 @@ html, body {
 
 }
 
-.navbar-header {
-  float: none;
-  color: #e8e8e8;
-  background-color: #5d1054;
-  border-bottom-style: solid;
-  border-color: black;
-
+ /* Style the navigation menu */
+ .topnav {
+  overflow: hidden;
+  background-color: #292929;
+  position: relative;
 }
-.navbar-inverse .navbar-toggle {
-  border-color: #121212;
-  background-color: #121212;
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
-.navbar-inverse .navbar-brand {
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid #121212;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #292929;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: rgba(209, 160, 53, 0.651);
   color: white;
 }
-.navbar-toggle {
-  display: block;
-  border-color: #292929;
-}
-.navbar-collapse.collapse {
-  display: none!important;
-  border-color: #292929;
-}
-.navbar-nav {
-  float: none!important;
-}
-.navbar-nav>li {
-  float: none;
-}
-.navbar-collapse.collapse.in{
-  display:block !important;
-  border-color: #292929;
-}
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #e8e8e8;
-}
+/* Style the active link (or home/logo) */
+.active {
+  background-color: purple;
+  color: white;
+} 
 .with-margin {
   margin-bottom: -10px;
   margin-top: 10px;
@@ -234,7 +237,7 @@ html, body {
   /* Set the fixed height of the footer here */
   height: 70px;
   line-height: 50px; /* Vertically center the text there */
-  background-color: #292929;
+  background-color: #121212;
   padding-top: 7px;
   box-shadow: 0px 5px 5px 8px black;
 

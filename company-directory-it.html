@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js" defer></script>
    <link rel="manifest" href="manifest.json">
 </head>
 <!-- Initialize Bootstrap functionality -->
@@ -171,36 +174,7 @@ a:hover {
 
 }
 
-.navbar-header {
-  float: none;
-  color: #fff;
-  background-color: #f6b220;
 
-}
-.navbar-inverse .navbar-toggle {
-  border-color: transparent;
-}
-.navbar-inverse .navbar-brand {
-  color: #fff
-}
-.navbar-toggle {
-  display: block;
-  border-color: transparent;
-}
-.navbar-collapse.collapse {
-  display: none!important;
-  border-color: none;
-}
-.navbar-nav {
-  float: none!important;
-}
-.navbar-nav>li {
-  float: none;
-}
-.navbar-collapse.collapse.in{
-  display:block !important;
-  border-color: none;
-}
 
 .with-margin {
   margin-bottom: -10px;
@@ -231,26 +205,23 @@ a:hover {
 
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="#">THRIVE UPSTATE</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#Company Policy">Company Policy</a></li>
-      <li><a href="#Location Directory">Location Directory</a></li>
-      <li><a href="#Helpdesk Request">Helpdesk Request</a></li>
-      <li><a href="#Maintenence Request">Maintenence Request</a></li>
-      <li><a href="#Thrive Arrive">Thrive Arrive</a></li>
-    </ul>
-    
-  </div>
-</nav>
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
+    <a href="index.html" class="active">Thrive Upstate</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="company-directory.html">Company Directory</a>
+        <a href="company-policies.html">Company Policy</a>
+        <a href="location-directory.html">Location Directory</a>
+        <a href="helpdesk-request.html">Helpdesk Request</a>
+        <a href="maintenence-request.html">Maintenence Request</a>
+        <a href="thrive-arrive.html">Thrive Arrive</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> 
 
 
 <body>

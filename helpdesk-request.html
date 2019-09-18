@@ -12,6 +12,9 @@
  <!-- END MY CSS -->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js" defer></script>
    <link rel="manifest" href="manifest.json">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -41,13 +44,13 @@ function goBack() {
 
 html, body {
   height: 100%;
-  padding-top: 25px;
+
   
 }
 
 fieldset {
-    background-color: #292929;
-    border-radius: 0px;
+    background-color: #121212;
+
 }
 #fs-frm input,
 #fs-frm select,
@@ -60,7 +63,6 @@ fieldset {
   font-size: 100%;
   color: #292929;
   border: none;
-  border-radius: 0;
   display: block;
   width: 100%;
   padding: 0;
@@ -69,7 +71,7 @@ fieldset {
   -moz-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 0px;
+
 }
 #fs-frm label,
 #fs-frm legend {
@@ -84,10 +86,10 @@ fieldset {
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea {
-  border: 1px solid rgba(0,0,0,0.2);
+
   background-color: rgba(255,255,255,0.9);
   padding: .75em 1em;
- 
+ border-radius: 5px;
   margin-bottom: 10px;
 
 }
@@ -97,20 +99,13 @@ fieldset {
   
   padding: .75em 1em;
   margin-bottom: 1.5em;
-    background-color: #292929;
-    border: 2px;
-    color:#292929;
-    border-style: solid;
 
 }
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
   background-color: white;
-  outline-style: solid;
-  outline-width: thin;
-  outline-color: gray;
-  outline-offset: -1px;
+  border-radius: 5px;
   
 }
 #fs-frm [type="text"],
@@ -121,34 +116,25 @@ fieldset {
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
-  width: auto;
   cursor: pointer;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-   padding: .75em 1em;
-  margin-bottom: 1.5em;
-    background-color: #e8e8e8;
-    border: 2px;
-    color:#292929;
-    border-style: solid;
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: center;
-    align-content: center;
-    border-radius: 5px;
- 
+  background-color: #e8e8e8;
 }
 
 #fs-frm button:focus,
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
 #fs-frm [type="reset"]:focus {
-  outline: none;
+
+  border-radius: 5px;
 }
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
-  margin-bottom: 0;
+  margin-bottom: 50;
+text-align: center;
+margin-top: 20px;
 }
 #fs-frm button,
 #fs-frm select {
@@ -175,7 +161,7 @@ fieldset {
 
 .extra-padding {
 
-    background-color: #292929;
+    background-color: #121212;
 }
 
 .col-xs-10 {
@@ -194,28 +180,23 @@ width: 80%;
 
 <body>
   
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="index.html">THRIVE UPSTATE</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="company-directory.html">Company Directory</a></li>
-      <li><a href="company-policies.html">Company Policy</a></li>
-      <li><a href="location-directory.html">Location Directory</a></li>
-      <li><a href="helpdesk-request.html">Helpdesk Request</a></li>
-      <li><a href="maintenence-request.html">Maintenence Request</a></li>
-      <li><a href="thrive-arrive.html">Thrive Arrive</a></li>
-    </ul>
-    
-  </div>
-</nav>
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
+    <a href="index.html" class="active">Thrive Upstate</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="company-directory.html">Company Directory</a>
+        <a href="company-policies.html">Company Policy</a>
+        <a href="location-directory.html">Location Directory</a>
+        <a href="helpdesk-request.html">Helpdesk Request</a>
+        <a href="maintenence-request.html">Maintenence Request</a>
+        <a href="thrive-arrive.html">Thrive Arrive</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> 
 
 
 <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/jonathan.osterud@thriveupstate.org" method="post">
@@ -223,26 +204,17 @@ width: 80%;
 
     
   <fieldset id="fs-frm-inputs">
+    <div class="col-xs-1"></div>
 <div class="col-xs-10">
 
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
 
-
-
-
-
-
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="firstname.lastname@thriveupstate.org" required="">
 
-
-
      <label for="telephone">Telephone Number</label>
     <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555"requited="">
-
-
-
 
     <label for="street-address">Location</label>
     <input type="text" name="street" id="street-address" placeholder="Address" required="">
@@ -250,11 +222,10 @@ width: 80%;
     <label for="message">Detailed Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Please describe your issue in as much detail as possible." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
-  
-<div class="col-xs-10">
-  <input type="submit" value="Create Ticket">
+    
+    <input type="submit" value="Create Ticket">
 </div>
-
+<div class="col-xs-1"></div>
 </div>
   </fieldset>
 </form>

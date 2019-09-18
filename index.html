@@ -13,6 +13,8 @@
  <!-- END MY CSS -->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="index.js" defer></script>
    <link rel="manifest" href="manifest.json">
    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
@@ -37,6 +39,16 @@ function goBack() {
 }
 
 
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+
 </script>
 
 
@@ -48,37 +60,25 @@ function goBack() {
 
 <!--  END STYLE SECTION FOR CSS -->
 
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="index.html">THRIVE UPSTATE</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="company-directory.html">Company Directory</a></li>
-      <li><a href="company-policies.html">Company Policy</a></li>
-      <li><a href="location-directory.html">Location Directory</a></li>
-      <li><a href="helpdesk-request.html">Helpdesk Request</a></li>
-      <li><a href="maintenence-request.html">Maintenence Request</a></li>
-      <li><a href="thrive-arrive.html">Thrive Arrive</a></li>
-    </ul>
-    
-  </div>
-</nav>
-
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
+    <a href="index.html" class="active">Thrive Upstate</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="company-directory.html">Company Directory</a>
+        <a href="company-policies.html">Company Policy</a>
+        <a href="location-directory.html">Location Directory</a>
+        <a href="helpdesk-request.html">Helpdesk Request</a>
+        <a href="maintenence-request.html">Maintenence Request</a>
+        <a href="thrive-arrive.html">Thrive Arrive</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> 
 
 <body>
-
-<div class="extra padding">
-  
-</div>
 
 
 <div class="container-fluid text-center bg-grey fill-height">
@@ -128,7 +128,7 @@ function goBack() {
 
 
 
-    <div class="col-sm-6 polaroid">
+    <div class="col-sm-6">
       <a href="thrive-arrive.html" class="btn btn-block btn-primary btn-lg card">
       <span class="glyphicon glyphicon-road logo-small"></span>
       <h4>Thrive Arrive</h4>

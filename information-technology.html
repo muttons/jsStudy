@@ -13,6 +13,9 @@
 <!-- END MY CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js" defer></script>
    <link rel="manifest" href="manifest.json">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -73,8 +76,13 @@ background: #292929;
 
  color: #fff;
   background-color: #292929;
-  border-color: #292929;
-
+  border-top: 1px solid #121212;
+  border-left: 1px solid #292929;
+  border-bottom: 1px solid #121212;
+  border-right: 1px solid #292929;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
   
 }
 
@@ -82,19 +90,25 @@ background: #292929;
 
 color: #fff;
  background-color: #292929;
- border-color: #292929;
  border-top-right-radius: 5px;
  border-top-left-radius: 5px;
- text-decoration: none;
+ list-style-type: none;
+ padding-top: 8px;
+ padding-bottom: 8px;
 }
 
 .list-group-item-bottom {
 
 color: #fff;
  background-color: #292929;
- border-color: #292929;
+ border-color: #121212;
+
  border-bottom-right-radius: 5px;
  border-bottom-left-radius: 5px;
+ list-style-type: none;
+ padding-top: 8px;
+ padding-bottom: 8px;
+
 }
  a:hover, a:focus, a:active {
       text-decoration: none;
@@ -144,28 +158,23 @@ text-decoration: none;
 </style>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="index.html">THRIVE UPSTATE</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="company-directory.html">Company Directory</a></li>
-      <li><a href="company-policies.html">Company Policy</a></li>
-      <li><a href="location-directory.html">Location Directory</a></li>
-      <li><a href="helpdesk-request.html">Helpdesk Request</a></li>
-      <li><a href="maintenence-request.html">Maintenence Request</a></li>
-      <li><a href="thrive-arrive.html">Thrive Arrive</a></li>
-    </ul>
-    
-  </div>
-</nav>
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
+    <a href="index.html" class="active">Thrive Upstate</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="company-directory.html">Company Directory</a>
+        <a href="company-policies.html">Company Policy</a>
+        <a href="location-directory.html">Location Directory</a>
+        <a href="helpdesk-request.html">Helpdesk Request</a>
+        <a href="maintenence-request.html">Maintenence Request</a>
+        <a href="thrive-arrive.html">Thrive Arrive</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> 
 
 
 <body>
@@ -176,10 +185,10 @@ text-decoration: none;
 
 <!-- START OF DROP DOWN LIST -->
 
-
-
+<div class="col-xs-1"></div>
+<div class="col-xs-10">
          <p>
-            <a class="btn btn-primary card" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               John Doe
             </a>
             
@@ -199,7 +208,7 @@ text-decoration: none;
 
 
           <p>
-              <a class="btn btn-primary card" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
                 John Doe
               </a>
               
@@ -217,6 +226,120 @@ text-decoration: none;
             </div>
 
 
+
+            <p>
+                <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  John Doe
+                </a>
+                
+              </p>
+              <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                        <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                        <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                        <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                        
+                     </ul>
+                </div>
+              </div>
+
+              <p>
+                  <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    John Doe
+                  </a>
+                  
+                </p>
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body">
+                      <ul class="list-group">
+                          <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                          <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                          <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                          <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                          
+                       </ul>
+                  </div>
+                </div>
+
+                <p>
+                    <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      John Doe
+                    </a>
+                    
+                  </p>
+                  <div class="collapse" id="collapseExample5">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                            <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                            <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                            <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                            
+                         </ul>
+                    </div>
+                  </div>
+
+                  <p>
+                      <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        John Doe
+                      </a>
+                      
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                      <div class="card card-body">
+                          <ul class="list-group">
+                              <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                              <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                              <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                              <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                              
+                           </ul>
+                      </div>
+                    </div>
+
+                    <p>
+                        <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          John Doe
+                        </a>
+                        
+                      </p>
+                      <div class="collapse" id="collapseExample7">
+                        <div class="card card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                                <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                                <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                                <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                                
+                             </ul>
+                        </div>
+                      </div>
+
+                      <p>
+                          <a class="btn btn-primary card btn-block" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            John Doe
+                          </a>
+                          
+                        </p>
+                        <div class="collapse" id="collapseExample8">
+                          <div class="card card-body">
+                              <ul class="list-group">
+                                  <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                                  <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                                  <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                                  <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                                  
+                               </ul>
+                          </div>
+                        </div>
+
+          </div>
+
+          
+
+          <div class="col-xs-1"></div>
 
 
 <!-- END OF DROP DOWN LIST -->
