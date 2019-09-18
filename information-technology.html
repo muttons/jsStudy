@@ -38,13 +38,21 @@ function goBack() {
 
 <style>
   
+
+  .list-group {
+
+background: none;
+text-decoration: none;
+
+
+  }
 .panel-default {
-  color: #292929;
+  color: white;
 }
 
 .panel-default > .panel-heading {
-    color: #292929;
-    background-color: #e8e8e8;
+    color: white;
+    background-color: #121212;
     padding-right: 0px;
 }
 
@@ -56,16 +64,38 @@ background: #292929;
 
 .collapse {
 
-  border-top-right-radius: 30px;
-  color: #292929;
+  text-decoration: none;
+ border-radius: 5px;
+  color: white;
 }
 
 .list-group-item {
 
  color: #fff;
   background-color: #292929;
+  border-color: #292929;
+
+  
 }
 
+.list-group-item-top {
+
+color: #fff;
+ background-color: #292929;
+ border-color: #292929;
+ border-top-right-radius: 5px;
+ border-top-left-radius: 5px;
+ text-decoration: none;
+}
+
+.list-group-item-bottom {
+
+color: #fff;
+ background-color: #292929;
+ border-color: #292929;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
  a:hover, a:focus, a:active {
       text-decoration: none;
       color: #fff;
@@ -82,10 +112,35 @@ a {
 }
 
 .h4, h4 {
-  color: #292929;
+  color: white;
 
 }
 
+.collapse.show {
+  background-color: white;
+color: white;
+text-decoration: none;
+
+}
+
+.card {
+
+
+text-decoration: none;
+}
+.card.body {
+
+color: white;
+background-color: white;
+text-decoration: none;
+
+}
+
+.list-group ul li {
+
+  text-decoration: none;
+
+}
 </style>
 
 
@@ -120,64 +175,49 @@ a {
 
 
 <!-- START OF DROP DOWN LIST -->
-<div class="panel-group">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <!-- MAKE SURE THE HREF LINK MATCHES THE ID OF THE PANEL -->
-                     <a data-toggle="collapse" href="#itinfo1"><h4>Jonathan Osterud</h4></a>
-                  </h4>
-               </div>
-               <div id="itinfo1" class="panel-collapse collapse">
-                  <ul class="list-group">
-                     <li class="list-group-item">IT Helpdesk Technician</li>
-                     <li class="list-group-item"><a href="tel:+18643658936">(864) 365-8936</a></li>
-                     <li class="list-group-item"><a href = "mailto: jonathan.osterud@thriveupstate.org">jonathan.osterud@thriveupstate.org</a></li>
-                     <li class="list-group-item"><a href="https://www.google.com/maps/dir//1700+Ridge+Rd,+Greenville,+SC+29607-4730,+USA/@34.7896262,-82.3724939,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8858258459d58c37:0x841cc7a8c01ba8bb!2m2!1d-82.3374744!2d34.7896312">1700 Ridge Road, GReenville, SC</a></li>
-                     
-                  </ul>
-               </div>
-            </div>
-         </div>
-
-<div class="panel-group">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h4 class="panel-title">
-                     <a data-toggle="collapse" href="#itinfo2"><h4>itinfo2</h4></a>
-                  </h4>
-               </div>
-               <div id="itinfo2" class="panel-collapse collapse">
-                  <ul class="list-group">
-                     <li class="list-group-item">Java</li>
-                     <li class="list-group-item">PHP</li>
-                     <li class="list-group-item">C++</li>
-                     <li class="list-group-item">HTML5</li>
-                     <li class="list-group-item">jQuery</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
 
 
-<div class="panel-group">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h4 class="panel-title">
-                     <a data-toggle="collapse" href="#itinfo3"><h4>itinfo3</h4></a>
-                  </h4>
-               </div>
-               <div id="itinfo3" class="panel-collapse collapse">
-                  <ul class="list-group">
-                     <li class="list-group-item">Java</li>
-                     <li class="list-group-item">PHP</li>
-                     <li class="list-group-item">C++</li>
-                     <li class="list-group-item">HTML5</li>
-                     <li class="list-group-item">jQuery</li>
-                  </ul>
-               </div>
+
+         <p>
+            <a class="btn btn-primary card" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              John Doe
+            </a>
+            
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item-top">IT Helpdesk Technician</li>
+                    <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                    <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                    <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                    
+                 </ul>
             </div>
-         </div>
+          </div>
+
+
+
+          <p>
+              <a class="btn btn-primary card" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                John Doe
+              </a>
+              
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item-top">IT Helpdesk Technician</a></li>
+                      <li class="list-group-item"><a href="tel:+18884445555">(888) 444-5555</a></li>
+                      <li class="list-group-item"><a href = "mailto: john.doe@thriveupstate.org">randomemail@random.com</a></li>
+                      <li class="list-group-item-bottom"><a href="https://www.google.com/maps/dir/273+Wansley+Road,+Taylors,+SC/12+Winchester+Court,+Mauldin,+SC/@34.8633156,-82.4323563,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x88582cacb56499ef:0xa1fa47173d5b4c87!2m2!1d-82.308516!2d34.9711386!1m5!1m1!1s0x885825df83b1c68b:0x8962868abf9ac966!2m2!1d-82.3022393!2d34.77089">12131 random location, city, state, zip code</a></li>
+                      
+                   </ul>
+              </div>
+            </div>
+
+
+
 
 <!-- END OF DROP DOWN LIST -->
 

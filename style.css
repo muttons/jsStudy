@@ -1,3 +1,16 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.5);
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 4 8px 16px 2px rgba(0,0,0,0.9);
+}
+
+
+
 
 a:href {
   text-align: center;
@@ -16,17 +29,20 @@ a:hover {
   }
 
   .bg-grey {
-    background-color: #292929;
+    background-color: #121212;
   }
 
   .container-fluid {
-    padding: 60px 50px;
+    padding-top: 35px;
     height: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
+    
   }
 
 html, body {
   height: 100%;
+  padding-top: 15px;
+  
 }
 
 .fill-height {
@@ -60,19 +76,19 @@ html, body {
   }
 
   .btn-primary {
-    background-color: #e8e8e8;
+    background-color: #292929;
     padding-top: 10px;
     border: 2px;
-    color:#292929;
-    border-style: solid;
+    color: white;
 
+    
 
   }
 
 
   .btn-primary:hover, .btn-primary:focus {
     background-color: #292929;
-    border-color: #e8e8e8;
+    border-color: black;
 
   }
 
@@ -83,7 +99,7 @@ html, body {
   }
 
  .btn-secondary {
-    background-color: #292929;
+    background-color: #121212;
     border:none;
     color: #e8e8e8;
     font-size: 33px;
@@ -91,11 +107,13 @@ html, body {
     padding-right: 20px;
     padding-bottom: 0px;
     float: left;
+    
   }
 
  .btn-secondary:hover, .btn-secondary:focus {
     background-color: #e8e8e8;
     border:none;
+    color: #121212;
   }
 
  .btn-secondary:active:focus {
@@ -104,7 +122,7 @@ html, body {
   }
 
  .btn-tertiary {
-    background-color: #292929;
+    background-color: #121212;
     padding: 5px;
     border:none;
     color:#e8e8e8;
@@ -116,6 +134,7 @@ html, body {
  .btn-tertiary:hover, .btn-tertiary:focus {
     background-color: #e8e8e8;
     border:none;
+    color: #121212;
   }
 
  .btn-tertiary:active:focus {
@@ -124,17 +143,17 @@ html, body {
   }
 
    .btn-quad {
-    background-color: #f6b220;
+    background-color: #121212;
     border:none;
-    color: #292929;
+    color: #e8e8e8;
     font-size: 28px;
-    padding-top: 0px;
+    
     border-radius: 5px;
 
   }
 
  .btn-quad:hover, .btn-quad:focus {
-    background-color: #292929;
+    background-color: #121212;
     border:none;
   }
 
@@ -163,18 +182,18 @@ html, body {
 .navbar-header {
   float: none;
   color: #e8e8e8;
-  background-color: #f6b220;
+  background-color: #5d1054;
   border-bottom-style: solid;
-  border-color: #292929;
+  border-color: black;
 
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #292929;
-  background-color: #292929;
+  border-color: #121212;
+  background-color: #121212;
 
 }
 .navbar-inverse .navbar-brand {
-  color: #292929;
+  color: white;
 }
 .navbar-toggle {
   display: block;
@@ -215,10 +234,10 @@ html, body {
   /* Set the fixed height of the footer here */
   height: 70px;
   line-height: 50px; /* Vertically center the text there */
-  background-color: #f6b220;
+  background-color: #292929;
   padding-top: 7px;
-  border-top-style: solid;
-  border-color: #292929;
+  box-shadow: 0px 5px 5px 8px black;
+
   
 }
 
@@ -264,6 +283,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 
 
 

@@ -39,6 +39,11 @@ function goBack() {
 <!--  START STYLE SECTION FOR CSS -->
 <style>/* reset */
 
+html, body {
+  height: 100%;
+  padding-top: 25px;
+  
+}
 
 fieldset {
     background-color: #292929;
@@ -83,7 +88,7 @@ fieldset {
   background-color: rgba(255,255,255,0.9);
   padding: .75em 1em;
  
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
 }
 
@@ -173,6 +178,12 @@ fieldset {
     background-color: #292929;
 }
 
+.col-xs-10 {
+
+width: 80%;
+
+
+}
 
 </style>
 <!--  END STYLE SECTION FOR CSS -->
@@ -206,10 +217,7 @@ fieldset {
   </div>
 </nav>
 
-<div class="extra-padding">
- <br><br><br>
 
-</div>
 <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/jonathan.osterud@thriveupstate.org" method="post">
 
 
@@ -243,16 +251,16 @@ fieldset {
     <textarea rows="5" name="message" id="message" placeholder="Please describe your issue in as much detail as possible." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
   
-
+<div class="col-xs-10">
   <input type="submit" value="Create Ticket">
-
+</div>
 
 </div>
   </fieldset>
 </form>
 
 <div class="extra-padding">
-  <br><br><br><br><br><br><br><br>
+  <br><br><br>
 </div>
 
 
