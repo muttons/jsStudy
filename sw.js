@@ -40,7 +40,7 @@ self.addEventListener('activate', function(event) {
 
 
 self.addEventListener('fetch', event => {
-  event.respondwith(
+  event.respondWith(
 
     fetch(event.request).catch(() => {
 
