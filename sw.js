@@ -1,5 +1,5 @@
-caches.delete('fifthVersion');
-var cacheName = 'Version1';
+caches.delete('Version1');
+var cacheName = 'Version2';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
