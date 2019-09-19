@@ -1,4 +1,4 @@
- /* working install code commented out for testing of new code
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
@@ -12,7 +12,8 @@ self.addEventListener('install', function(e) {
        '/test/information-technology.html',
        '/test/helpdesk-request.html',
        '/test/images/flower-512.png',
-       '/test/images/flower-192.png'
+       '/test/images/flower-192.png',
+       '/test/dog.jpg'
      ]);
    })
  );
@@ -27,7 +28,7 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-*/
+
 
 /* test code */
 var cacheName = 'thirdVersion';
