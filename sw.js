@@ -1,7 +1,9 @@
+caches.delete('fifthVersion');
+var cacheName = 'Version1';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('video-store').then(function(cache) {
+   caches.open(cacheName).then(function(cache) {
      return cache.addAll([
        '/test/',
        '/test/index.html',
@@ -32,10 +34,7 @@ self.addEventListener('fetch', function(e) {
 
 /* test code */
 
-caches.delete('fourthVersion');
 
-
-var cacheName = 'fifthVersion';
 
 self.addEventListener('install', event => {
   event.waitUntil(
