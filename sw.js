@@ -1,5 +1,5 @@
-caches.delete('Version2');
-var cacheName = 'Version3';
+caches.delete('Version3');
+var cacheName = 'Version4';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
@@ -15,7 +15,7 @@ self.addEventListener('install', function(e) {
        '/test/helpdesk-request.html',
        '/test/images/flower-512.png',
        '/test/images/flower-192.png',
-       '/test/dog.jpg'
+
      ]);
    })
  );
@@ -40,7 +40,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => cache.addAll([
-      '/test/dog.jpg',
+
       '/test/',
        '/test/index.html',
        '/test/index.js',
