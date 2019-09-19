@@ -31,13 +31,13 @@ self.addEventListener('fetch', function(e) {
 
 
 /* test code */
-var cacheName = 'thirdVersion';
+var cacheName = 'fourthVersion';
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => cache.addAll([
-        '/test/dog.jpg',
+      '/test/dog.jpg',
       '/test/',
        '/test/index.html',
        '/test/index.js',
