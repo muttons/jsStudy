@@ -31,7 +31,11 @@ self.addEventListener('fetch', function(e) {
 
 
 /* test code */
-var cacheName = 'fourthVersion';
+
+caches.delete('fourthVersion');
+
+
+var cacheName = 'fifthVersion';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -69,3 +73,5 @@ self.addEventListener('fetch', function (event) {
       })
   );
 });
+
+
