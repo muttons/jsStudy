@@ -217,7 +217,7 @@ html, body {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: purple;
+  background-color: #800080;
   color: white;
 } 
 .with-margin {
