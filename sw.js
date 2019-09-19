@@ -1,76 +1,51 @@
-caches.delete('Version3');
-var cacheName = 'Version4';
+var CACHE_NAME = 'v1';
+var urlsToCache = [
+  '/test/',
+  '/test/index.html',
+  '/test/index.js',
+  '/test/style.css',
+  '/test/company-directory.html',
+  '/test/company-directory-it.html',
+  '/test/information-technology.html',
+  '/test/helpdesk-request.html',
+  '/test/images/flower-512.png',
+  '/test/images/flower-192.png',
+];
 
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open(cacheName).then(function(cache) {
-     return cache.addAll([
-       '/test/',
-       '/test/index.html',
-       '/test/index.js',
-       '/test/style.css',
-       '/test/company-directory.html',
-       '/test/company-directory-it.html',
-       '/test/information-technology.html',
-       '/test/helpdesk-request.html',
-       '/test/images/flower-512.png',
-       '/test/images/flower-192.png',
-
-     ]);
-   })
- );
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+    .then( cache => {
+      return cache.addAll(urlsToCache);
+    })
+  );
 });
 
-self.addEventListener('fetch', function(e) {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+
+        }).map(function(cacheName) {
+          return caches.delete(cacheName)
+        })
+      );
     })
   );
 });
 
 
 
-/* test code */
 
 
+self.addEventListener('fetch', event => {
+  event.respondwith(
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(cache => cache.addAll([
+    fetch(event.request).catch(() => {
 
-      '/test/',
-       '/test/index.html',
-       '/test/index.js',
-       '/test/style.css',
-       '/test/company-directory.html',
-       '/test/company-directory-it.html',
-       '/test/information-technology.html',
-       '/test/helpdesk-request.html',
-       '/test/images/flower-512.png',
-       '/test/images/flower-192.png'
-      ]))
+      return caches.match(event.request);
+    })
   );
 });
-
-self.addEventListener('message', function (event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
-});
-
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-  );
-});
-
 
