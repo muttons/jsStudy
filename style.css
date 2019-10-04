@@ -171,7 +171,13 @@ html, body {
   font-size: 30px;
 }
 
-
+.cse .gsc-control-cse,
+.gsc-control-cse {
+padding-top: 4px!important;
+padding-bottom: 0px!important;
+background-color: #292929!important;
+border-color: #292929!important;
+}
 
 .row {
   padding: 0px;
@@ -183,6 +189,7 @@ html, body {
   overflow: hidden;
   background-color: #292929;
   position: relative;
+
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -193,9 +200,9 @@ html, body {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 15px 5px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
   display: block;
   border-bottom: 1px solid #121212;
 }
