@@ -218,7 +218,7 @@ border-color: #292929!important;
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: rgba(209, 160, 53, 0.651);
+  background-color: #292929;
   color: white;
 }
 
