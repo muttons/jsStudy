@@ -177,8 +177,13 @@ padding-top: 4px!important;
 padding-bottom: 0px!important;
 background-color: #292929!important;
 border-color: #292929!important;
+
 }
 
+a.gsst_a {
+  background-color: #fff!important;
+  }
+  
 .row {
   padding: 0px;
 
@@ -204,7 +209,7 @@ border-color: #292929!important;
   text-decoration: none;
   font-size: 25px;
   display: block;
-  border-bottom: 1px solid #121212;
+
 }
 
 /* Style the hamburger menu */
@@ -224,7 +229,7 @@ border-color: #292929!important;
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #800080;
+  background-color: #553278;
   color: white;
 } 
 .with-margin {
