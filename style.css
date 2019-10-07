@@ -35,7 +35,12 @@ a:hover {
   .container-fluid {
     
     height: 100%;
+    width: 100%;
     padding-bottom: 115px;
+    padding-top: 120px;
+    
+    
+    
     
   }
 
@@ -193,7 +198,10 @@ a.gsst_a {
  .topnav {
   overflow: hidden;
   background-color: #292929;
-  position: relative;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
 
 }
 
@@ -299,6 +307,12 @@ a {
   color: white;
 }
 
+h4 {
+
+font-size: 25px;
+
+
+}
 
 
 
