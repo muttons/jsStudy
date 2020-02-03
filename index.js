@@ -3,7 +3,7 @@
 
 if('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/test/sw.js').then( registration => {
+    navigator.serviceWorker.register('./js/sw.js').then( registration => {
       console.log('Service Worker Registered');
     }, err => {
       console.log('ServiceWorker registration failed, ${err}');
@@ -17,7 +17,7 @@ if('serviceWorker' in navigator) {
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'none';
+addBtn.style.display = 'true';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -51,9 +51,4 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
-} 
-
-
- 
-
-
+}
