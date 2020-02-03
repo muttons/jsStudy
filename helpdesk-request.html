@@ -1,32 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Thrive Upstate</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="GtthQ7mSF5w-vGhLyqRdFURlVCpaT4KVte-8JWudFMA" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!-- START MY CSS -->
+    <!-- START MY CSS -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
- <!-- END MY CSS -->   
+    <!-- END MY CSS -->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="index.js" defer></script>
-   <link rel="manifest" href="manifest.json">
-   <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
-   <link rel="apple-touch-icon" sizes="150x150" href="icon/apple-touch-icon.png">
-<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-<script async src="https://cse.google.com/cse.js?cx=008511990827613828420:oyojv3gjygu"></script>
-
-
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="150x150" href="icon/apple-touch-icon.png">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <script async src="https://cse.google.com/cse.js?cx=008511990827613828420:oyojv3gjygu"></script>
 </head>
+
 <!-- Initialize Bootstrap functionality -->
 <script>
 // Initialize tooltip component
@@ -45,19 +38,18 @@ function goBack() {
 
 </script>
 
-
 <!--  START STYLE SECTION FOR CSS -->
-<style>/* reset */
+<style>
 
 html, body {
   height: 100%;
 }
 
-
 fieldset {
   height: 100%;
-    background-color: #121212;
+  background-color: #121212;
 }
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm button,
@@ -71,7 +63,7 @@ fieldset {
   border: none;
   display: block;
   width: 100%;
-  padding: 0;
+  padding-top: 130px;
   margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -79,6 +71,7 @@ fieldset {
   padding-right: 10px;
 
 }
+
 #fs-frm label,
 #fs-frm legend {
   font-size: 10pt;
@@ -88,27 +81,22 @@ fieldset {
   padding-bottom: 0px;
   color: #e8e8e8;
 }
-/* border, padding, margin, width */
+
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea {
-
   background-color: rgba(255,255,255,0.9);
   padding: .75em 1em;
- border-radius: 5px;
+  border-radius: 5px;
   margin-bottom: 10px;
-  
-
 }
 
 #fs-frm button {
-
-  
   padding: .75em 1em;
   margin-bottom: 1.5em;
-
-
 }
+
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
@@ -116,10 +104,12 @@ fieldset {
   border-radius: 5px;
   
 }
+
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
   width: 100%;
 }
+
 #fs-frm button,
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
@@ -136,43 +126,32 @@ fieldset {
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
 #fs-frm [type="reset"]:focus {
-
   border-radius: 5px;
 }
+
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
   margin-bottom: 50;
-text-align: center;
-margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
+
 #fs-frm button,
 #fs-frm select {
   text-transform: none;
 }
 
-
-
 .extra-padding {
-
-    background-color: #121212;
+  background-color: #121212;
 }
 
 .col-xs-10 {
-
-width: 80%;
-
-
+  width: 80%;
 }
 
 </style>
 <!--  END STYLE SECTION FOR CSS -->
 
-
-
-
-
-<body>
-  
  <!-- Top Navigation Menu -->
  <div class="topnav">
   <a href="index.html" class="active text-center"><img src="images/flower-38.png"> Thrive Upstate</a> 
@@ -180,68 +159,76 @@ width: 80%;
   </div>
 </div> 
 
+<!-- Start Body Section -->
+<body>
 
 <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/jonathan.osterud@thriveupstate.org" method="post">
-
-
-    
   <fieldset id="fs-frm-inputs">
+
+    <!-- Added for proper spacing -->
     <div class="col-xs-1"></div>
-<div class="col-xs-10">
+    <!-- Added for proper spacing -->
 
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <div class="col-xs-10">
 
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="firstname.lastname@thriveupstate.org" required="">
+      <!-- Full name info set -->
+      <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
 
-     <label for="telephone">Telephone Number</label>
-    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555"requited="">
+      <!-- Email address info set -->
+      <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="firstname.lastname@thriveupstate.org" required="">
 
-    <label for="street-address">Location</label>
-    <input type="text" name="street" id="street-address" placeholder="Address" required="">
+      <!-- Telephone number info set -->
+      <label for="telephone">Telephone Number</label>
+        <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555"requited="">
 
-    <label for="message">Detailed Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Please describe your issue in as much detail as possible." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
-    
-    <input type="submit" value="Create Ticket">
-</div>
-<div class="col-xs-1"></div>
-</div>
+      <!-- Location info set -->
+      <label for="street-address">Location</label>
+        <input type="text" name="street" id="street-address" placeholder="Address" required="">
+
+      <!-- Detailed message info set -->
+      <label for="message">Detailed Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Please describe your issue in as much detail as possible." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+            <input type="submit" value="Create Ticket">
+    </div>
+
+    <!-- Added for proper spacing -->
+    <div class="col-xs-1"></div>
+    <!-- Added for proper spacing -->
+
   </fieldset>
 </form>
 
-
-
-
-
-
-
+<!-- Start Footer Section -->
 <footer class="footer">
-  <div class="container text-center">
+    <div class="container text-center">
+      <div class="col-xs-2">
+          <button class="btn btn-secondary btn-sm" onclick="goBack()"><span class="glyphicon glyphicon-chevron-left home-button"></span></button>   
+      </div>
   
-    <div class="col-xs-2">
-        <button class="btn btn-secondary btn-sm" onclick="goBack()"><span class="glyphicon glyphicon-chevron-left home-button"></span></button>
-        
-    </div>
-    <div class="col-xs-1">
-    </div>
+  <!-- Added for proper spacing on mobile + Desktop -->
+      <div class="col-xs-1"> </div>
+  <!-- Added for proper spacing on mobile + Desktop -->
+  
       <div class="col-xs-6">
         <a href="index.html" class="btn btn-tertiary btn-sm">
-              <div class="glyphicon glyphicon-home home-button"></div>
-          </a> 
-        </div>
-      <div class="col-xs-1">
-    </div>
-    <div class="col-xs-2">
-    </div>
-        
+            <div class="glyphicon glyphicon-home home-button"></div>
+        </a> 
+      </div>
+  
+  <!-- Added for proper spacing on mobile + Desktop -->    
+      <div class="col-xs-1"> </div>
+  <!-- Added for proper spacing on mobile + Desktop --> 
+  
+  <!-- Added for proper spacing on mobile + Desktop -->
+      <div class="col-xs-2"> </div>
+  <!-- Added for proper spacing on mobile + Desktop -->  
+  
     </div>    
-  </div>
-  </div>
-
-</footer>
+  </footer>
+  <!-- End Footer Section-->
 
 </body>
 </html>

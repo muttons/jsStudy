@@ -1,13 +1,15 @@
-var CACHE_NAME = 'v1';
+var CACHE_NAME = 'v7';
 var urlsToCache = [
-  './index.html',
-  './js/index.js',
-  './css/style.css',
-  './agency_directory.html',
-  './event-calendar.html',
-  './event-monday.html',
-  './event-tuesday.html',
-  './event-wednesday.html',
+  '/test/',
+  '/test/index.html',
+  '/test/index.js',
+  '/test/style.css',
+  '/test/company-directory.html',
+  '/test/company-directory-it.html',
+  '/test/information-technology.html',
+  '/test/helpdesk-request.html',
+  '/test/images/flower-512.png',
+  '/test/images/flower-192.png',
 ];
 
 self.addEventListener('install', event => {
@@ -46,3 +48,4 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+

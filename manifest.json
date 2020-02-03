@@ -1,19 +1,19 @@
 {
-  "short_name": "schspa",
-  "name": "schspa",
+  "short_name": "Thrive",
+  "name": "Thrive Upstate",
   "icons": [
     {
-      "src": "/images/flower-512.png",
+      "src": "/test/images/flower-512.png",
       "type": "image/png",
       "sizes": "512x512"
-    } ,
+    } , 
     {
-      "src": "/images/flower-192.png",
+      "src": "/test/images/flower-192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
-    ],
-  "start_url": "index.html",
+  ],
+  "start_url": "/test/index.html",
   "background_color": "#292929",
   "display": "standalone",
   "theme_color": "#292929"
