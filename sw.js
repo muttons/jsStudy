@@ -1,51 +1,70 @@
-var CACHE_NAME = 'v7';
-var urlsToCache = [
-  '/test/',
-  '/test/index.html',
-  '/test/index.js',
-  '/test/style.css',
-  '/test/company-directory.html',
-  '/test/company-directory-it.html',
-  '/test/information-technology.html',
-  '/test/helpdesk-request.html',
-  '/test/images/flower-512.png',
-  '/test/images/flower-192.png',
+const staticCacheName = 'site-static-v1.0';
+const dynamicCacheName = 'site-dynamic-v1.0';
+const assets = [
+  '/',
+  '/index.html',
+  '/js/app.js',
+  '/js/ui.js',
+  '/css/styles.css',
+  'https://fonts.googleapis.com/icon?family=Material+Icons',
+  'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
+  '/pages/fallback.html'
 ];
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-    .then( cache => {
-      return cache.addAll(urlsToCache);
+// cache size limit function
+const limitCacheSize = (name, size) => {
+  caches.open(name).then(cache => {
+    cache.keys().then(keys => {
+      if(keys.length > size){
+        cache.delete(keys[0]).then(limitCacheSize(name, size));
+      }
+    });
+  });
+};
+
+// install event
+self.addEventListener('install', evt => {
+  //console.log('service worker installed');
+  evt.waitUntil(
+    caches.open(staticCacheName).then((cache) => {
+      console.log('caching shell assets');
+      cache.addAll(assets);
     })
   );
 });
 
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-
-        }).map(function(cacheName) {
-          return caches.delete(cacheName)
-        })
+// activate event
+self.addEventListener('activate', evt => {
+  //console.log('service worker activated');
+  evt.waitUntil(
+    caches.keys().then(keys => {
+      //console.log(keys);
+      return Promise.all(keys
+        .filter(key => key !== staticCacheName && key !== dynamicCacheName)
+        .map(key => caches.delete(key))
       );
     })
   );
 });
 
-
-
-
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-
-    fetch(event.request).catch(() => {
-
-      return caches.match(event.request);
-    })
-  );
+// fetch events
+self.addEventListener('fetch', evt => {
+  if(evt.request.url.indexOf('firestore.googleapis.com') === -1){
+    evt.respondWith(
+      caches.match(evt.request).then(cacheRes => {
+        return cacheRes || fetch(evt.request).then(fetchRes => {
+          return caches.open(dynamicCacheName).then(cache => {
+            cache.put(evt.request.url, fetchRes.clone());
+            // check cached items size
+            limitCacheSize(dynamicCacheName, 30);
+            return fetchRes;
+          })
+        });
+      }).catch(() => {
+        if(evt.request.url.indexOf('.html') > -1){
+          return caches.match('/pages/fallback.html');
+        }
+      })
+    );
+  }
 });
-

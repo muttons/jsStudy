@@ -1,171 +1,204 @@
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Thrive Upstate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- my CSS -->
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <!-- Service Worker Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+  <meta name="theme-color" content="#FFE1C4">
+  <title>Mutton</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="GtthQ7mSF5w-vGhLyqRdFURlVCpaT4KVte-8JWudFMA" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!-- START MY CSS -->
-    <link rel="stylesheet" href="style.css" type="text/css"/>
- <!-- END MY CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
 
-      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="index.js" defer></script>
-   <link rel="manifest" href="manifest.json">
-   <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
-   <link rel="apple-touch-icon" sizes="150x150" href="icon/apple-touch-icon.png">
-<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-<script async src="https://cse.google.com/cse.js?cx=008511990827613828420:oyojv3gjygu"></script>
-
-
+  </style>
 
 </head>
-<!-- Initialize Bootstrap functionality -->
-<script>
-// Initialize tooltip component
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-// Initialize popover component
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-
-function goBack() {
-  window.history.back();
-}
-
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
-
-
-</script>
-
- <!-- Top Navigation Menu -->
- <div class="topnav">
-  <a href="index.html" class="active text-center"><img src="images/flower-38.png"> Thrive Upstate</a>
-    <div class="gcse-search" enableAutoComplete="true" data-mobileLayout="disabled" placeholder="Search"> </div>
-  </div>
-</div>
-
 
 <body>
 
 
+  <!-- nav and -->
+  <header>
+    <nav class="nav wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">schspa</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Event Calendar</a></li>
+          <li><a href="#">Agency Directory</a></li>
 
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <!-- side nav -->
+  <ul class="sidenav grey lighten-2" id="mobile-links">
+    <li><a href="#">Event Calendar</a></li>
+    <li><a href="#">Agency Directory</a></li>
 
-<div class="container-fluid text-center bg-grey fill-height">
-  <br>
+  </ul>
 
-
-  <div class="col-sm-12">
-    <button class="add-button btn-block btn btn-lg btn-primary card">Add to home screen</button>
-  </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <a href="company-directory.html" class="btn btn-block btn-primary btn-lg card">
-       <span class="glyphicon glyphicon-folder-open logo-small "></span>
-        <h4>Company Directory</h4>
-      </a>
-    </div>
-
-    <div class="col-sm-6">
-      <a href="company-policies.html" class="btn  btn-block btn-primary btn-lg card">
-        <span class="glyphicon glyphicon-book logo-small"></span>
-        <h4>Company Policies</h4>
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <a href="location-directory.html" class="btn btn-block btn-primary btn-lg card">
-        <span class="glyphicon glyphicon-map-marker logo-small"></span>
-        <h4>Location Directory</h4>
-      </a>
-    </div>
-
-    <div class="col-sm-6">
-      <a href="helpdesk-request.html" class="btn btn-block btn-primary btn-lg card">
-        <span class="glyphicon glyphicon-hdd logo-small"></span>
-        <h4>Helpdesk Request</h4>
-      </a>
+  <!-- box over mian image-->
+  <div class="box-overlay">
+    <div>
+      <h5 class="mb-3 text-black title">South Carolina Human Services Provider Association</h5>
+      <p>Represents 48 Provider Agencies who support approximately 32,000 people with Intellectual and related disabilities with over 9,000 employees utilizing a self-reported $440,000,000.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <a href="maintenence-request.html" class="btn btn-block btn-primary btn-lg card">
-        <span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4>Maintenence Request</h4>
-      </a>
+  <!-- Card Section -->
+  <section class="section container">
+    <div class="row">
 
+      <!-- Card 1 -->
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/img/ec.jpg" alt="Event Calendar">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Event Calendar</span>
+            <p>Check out our current and upcoming events!</p>
+          </div>
+          <div class="card-action center">
+            <a href="#">More Information</a>
+            <a href="#" class="btn-floating purple darken-4 pulse">
+              <i class="material-icons">expand_more</i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/img/adirectory.jpg" alt="Agency Directory">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Agency Directory</span>
+            <p>A full list of the Agencies we represent</p>
+          </div>
+          <div class="card-action center">
+            <a href="#">More Information</a>
+            <a href="#" class="btn-floating purple darken-4 pulse">
+              <i class="material-icons">expand_more</i>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
     </div>
+    </div>
+  </section>
 
-
-
-
-    <div class="col-sm-6">
-      <a href="thrive-arrive.html" class="btn btn-block btn-primary btn-lg card">
-      <span class="glyphicon glyphicon-road logo-small"></span>
-      <h4>Thrive Arrive</h4>
-      </a>
-     </div>
-   </div>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="/img/bg2.jpg"></div>
   </div>
-</div>
+
+  <!-- What we Do -->
+  <section class="section container" id="services">
+    <div class="row">
+      <div class="col s12 l12">
+        <h2 class="purple-text text-darken-4 center pad-bot">What we do</h2>
+
+      </div>
+      <div class="col s12 l12">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s4">
+            <a href="#support" class="active purple-text text-darken-4">Support</a>
+          </li>
+          <li class="tab col s4">
+            <a href="#provide" class="purple-text text-darken-4">Provide</a>
+          <li class="tab col s4">
+            <a href="#create" class="purple-text text-darken-4">Create</a>
+          </li>
+
+          </li>
+        </ul>
+        <div id="support" class="col s12">
+          <p class="flow-text purple-text text-darken-4">Support</p>
+          <p>Support individuals in the least restrictive environment with a focus on community inclusion and participation.</p>
+
+        </div>
+        <div id="provide" class="col s12">
+          <p class="flow-text purple-text text-darken-4">Provide</p>
+          <p>Provide opportunities for individuals with intellectual disabilities to have the opportunity to work and obtain gainful employment in their communities.</p>
+
+        </div>
+        <div id="create" class="col s12">
+          <p class="flow-text purple-text text-darken-4">Create</p>
+          <p>Create environments that support innovation by sharing and learning from each other and by reaching out beyond our local borders to learn about new and best practice models of service.</p>
+
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="/img/bg3.jpg"></div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer indigo darken-2">
+    <div class="container">
+      <div class="col s12">
+        <ul class="row">
+          <li><a class="grey-text text-lighten-3 col s1 push-s5 center-align" target="_blank" href="https://www.facebook.com/South-Carolina-Human-Service-Providers-Association-134256086634636/"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3 col s1 push-s5 center-align" target="_blank" href="https://twitter.com/SC_HSPA?lang=en"><i class="fab fa-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Jonathan Osterud</div>
+    </div>
+  </footer>
 
 
 
+  <script>
+    $(document).ready(function() {
+      $('.collapsible').collapsible();
+    });
+  </script>
 
-
-
-
-
-
-<footer class="footer">
-	<div class="container text-center">
-
-		<div class="col-xs-2">
-				<button class="btn btn-secondary btn-sm" onclick="goBack()"><span class="glyphicon glyphicon-chevron-left home-button"></span></button>
-
-		</div>
-		<div class="col-xs-1">
- 		</div>
- 			<div class="col-xs-6">
-				<a href="index.html" class="btn btn-tertiary btn-sm">
-      				<div class="glyphicon glyphicon-home home-button"></div>
-     			</a>
-     		</div>
-     	<div class="col-xs-1">
- 		</div>
- 		<div class="col-xs-2">
- 		</div>
-
-		</div>
- 	</div>
- 	</div>
-
-</footer>
-
+  <script src="/js/app.js"></script>
+  <script src="/js/ui.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
 
 </body>
+
 </html>
