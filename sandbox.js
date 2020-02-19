@@ -1,14 +1,37 @@
-let age = 25;
-let year = 2020;
-
-console.log(age, year);
-
-age = 30;
-console.log('this is a console log as a string');
+// strings
+console.log('hello, word');
 
 
-const points = 100;
-console.log(points);
+
+let email = 'mario@mmmmmmm.com';
+
+console.log(email);
 
 
-//this is a comment 
+
+
+// string concatenation
+let firstName = 'John';
+let lastName = 'Smith';
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);
+
+
+
+//getting characters 
+console.log(fullName[2]);
+
+
+
+
+
+// string length
+console.log(fullName.length);
+
+
+
+
+// string methods
+console.log(fullName.toUpperCase());
