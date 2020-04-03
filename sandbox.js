@@ -1,37 +1,22 @@
-// strings
-console.log('hello, word');
+const para = document.querySelector('p');
+
+//console.log(para.innerText);
+//para.innerText = 'ninja';
+
+// const paras = document.querySelectorAll('p');
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// })
+
+const content = document.querySelector('.content');
+
+//console.log(content.innerHTML);
+//content.innerHTML = '<h2> this is a new h2 </h2>';
 
 
+const people = ['jon', 'yoshi', 'anri'];
 
-let email = 'mario@mmmmmmm.com';
-
-console.log(email);
-
-
-
-
-// string concatenation
-let firstName = 'John';
-let lastName = 'Smith';
-
-let fullName = firstName + " " + lastName;
-
-console.log(fullName);
-
-
-
-//getting characters 
-console.log(fullName[2]);
-
-
-
-
-
-// string length
-console.log(fullName.length);
-
-
-
-
-// string methods
-console.log(fullName.toUpperCase());
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`;
+});
